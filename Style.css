@@ -1,0 +1,111 @@
+/* =============================================================
+   SE2026 Indragiri Hilir — Stylesheet
+   File   : style.css
+   Deskripsi: Seluruh gaya visual untuk halaman registrasi mandiri
+============================================================= */
+
+:root {
+    --jingga-nadi: #f79039;
+    --kuning-asa: #febd26;
+    --dark-text: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    color: var(--dark-text);
+}
+
+/* ── Navbar ── */
+.logo-se {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.logo-bps {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+/* ── Hero ── */
+.bg-se2026 {
+    background: linear-gradient(135deg, var(--jingga-nadi), var(--kuning-asa));
+    color: white;
+}
+
+.hero-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* ── Disclaimer ── */
+.disclaimer-box {
+    background-color: #fff4e6;
+    border-left: 4px solid var(--jingga-nadi);
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* ── Card Form ── */
+.card-form {
+    border: none;
+    border-top: 5px solid var(--jingga-nadi);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Tombol utama ── */
+.btn-primary-se {
+    background-color: var(--jingga-nadi);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: 0.3s;
+}
+
+.btn-primary-se:hover {
+    background-color: var(--kuning-asa);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-primary-se:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ── Form controls ── */
+::placeholder {
+    color: #ccc !important;
+    opacity: 0.7;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--kuning-asa);
+    box-shadow: 0 0 0 0.25rem rgba(254, 189, 38, 0.25);
+}
+
+/* ── Pesan sukses ── */
+.success-card {
+    border: none;
+    border-top: 5px solid #28a745;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #28a745;
+}
+
+/* ── Modal pratinjau ── */
+#previewTable td:first-child {
+    font-weight: 600;
+    width: 45%;
+    color: var(--jingga-nadi);
+}
